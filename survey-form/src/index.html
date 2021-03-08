@@ -1,0 +1,134 @@
+ <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Form was actually created for no actual purpose</p>
+  </header>
+
+  <div class="form-outer">
+    <form action="" id="survey-form" autocomplete="off">
+
+      <div class="form-column">
+
+        <div class="name">
+          <label for="name" id="name-label" required>Name</label>
+          <input type="text" name="new-name" id="name" placeholder="Enter your name" autocomplete="nope" >
+        </div>
+
+        <div class="email">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="dropdown">
+          <label for="dropdown">Vaccine Type</label>
+          <select name="music" id="dropdown">
+            <option disabled selected readonly>SELECT AN OPTION</option>
+            <option value="deep-house">Pfizer-BioNTech COVID-19 Vaccine</option>
+            <option value="techno-house">Moderna COVID-19 Vaccine</option>
+            <option value="acid-jazz">Janssen COVID-19 Vaccine</option>
+            <option value="bachata">Others</option>
+          </select>
+        </div>
+
+        <div class="textarea">
+          <label for="comments">Comments</label>
+          <textarea name="comments" placeholder="Include All The Additional Info.." id="comments" cols="25" rows="4"></textarea>
+        </div>
+
+      </div>
+      <div class="form-column">
+
+        <div class="last-name">
+          <label for="last-name" id="last-name-label">Last Name</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" autocomplete="nope" required>
+        </div>
+
+        <div class="number">
+          <label for="number">Age</label>
+          <input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="110" required>
+        </div>
+
+        <div class="radio-buttons">
+          <h3>Sex</h3>
+
+          <div class="radio-button">
+            <input type="radio" name="sex" value="male" id="male">
+            <label for="male">
+              <span class="radio-button-span"></span>
+              Male
+            </label>
+          </div>
+
+          <div class="radio-button">
+            <input type="radio" name="sex" value="female" id="female">
+            <label for="female">
+              <span class="radio-button-span"></span>
+              Female
+            </label>
+          </div>
+
+        </div>
+
+        <div class="checkboxes">
+          <h3>Health Conditions</h3>
+          <div class="sport-column">
+
+            <label for="football">
+              <input type="checkbox" value="sports" id="football">
+              <span class="checkbox-text">Pregnant</span>
+            </label>
+
+            <label for="tennis">
+              <input type="checkbox" value="sports" id="tennis">
+              <span class="checkbox-text">Cancer</span>
+            </label>
+
+            <label for="table-tennis">
+              <input type="checkbox" value="sports" id="table-tennis">
+              <span class="checkbox-text">Asthma</span>
+            </label>
+          </div>
+
+          <div class="sport-column">
+
+            <label for="baseball">
+              <input type="checkbox" value="sports" id="baseball">
+              <span class="checkbox-text">Obesity</span>
+            </label>
+
+            <label for="basketball">
+              <input type="checkbox" value="sports" id="basketball">
+              <span class="checkbox-text">Smoking</span>
+            </label>
+
+            <label for="volleyball">
+              <input type="checkbox" value="sports" id="volleyball">
+              <span class="checkbox-text">Other</span>
+            </label>
+          </div>
+        </div>
+        <div class="outer-button">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
